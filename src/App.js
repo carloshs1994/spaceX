@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import NavBar from './components/NavBar';
-import Rockets from './components/Rockets';
+import RocketsContainer from './components/RocketsContainer';
 import Missions from './components/Missions';
 import MyProfile from './components/MyProfile';
 import './App.css';
@@ -11,9 +11,8 @@ function App() {
       <BrowserRouter>
         <NavBar />
         <Routes>
-            <Route path="/" element={<Rockets />} />
+            <Route path="/" element={<RocketsContainer />} />
             <Route path="/Missions" element={<Missions />} />
-            <Route path="/MyProfile" element={<MyProfile />} />
             <Route path="/MyProfile" element={<MyProfile />} />
         </Routes>
       </BrowserRouter>
