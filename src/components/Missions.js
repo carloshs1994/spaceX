@@ -7,7 +7,6 @@ import { fetchData } from '../redux/missionsReducer';
 
 const Missions = () => {
   const missionsData = useSelector((state) => state.missionsReducer);
-  console.log(missionsData);
   const dispatch = useDispatch();
 
   const PrintMissions = ({ list }) => list.map((mission) => {
