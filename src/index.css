@@ -25,3 +25,7 @@ code {
     'Courier New',
     monospace;
 }
+
+#container {
+  padding: calc(10% - 19px) 5px;
+}
