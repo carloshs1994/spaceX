@@ -38,7 +38,8 @@ const reducer = (state = initialState, action) => {
     case CHANGE_RESERVED_STATUS:
       return state.map((mission) => {
         if (mission.id !== action.id) return mission;
-        return { ...mission, reserved: true };
+        if (mission.reserved === false) return { ...mission, reserved: true };
+        return { ...mission, reserved: false };
       });
     default:
       return state;
