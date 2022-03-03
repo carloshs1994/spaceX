@@ -1,4 +1,5 @@
 import axios from 'axios';
+
 const SET_ROCKETS = 'spaceX/rocketsReducer/SET_ROCKETS';
 const SET_RESERVED = 'spaceX/rocketsReducer/SET_RESERVED';
 const SET_CANCELATION = 'spacex/rocketsReducer/SET_CANCELATION';
@@ -9,23 +10,25 @@ const initialState = {
 };
 
 const rocketsReducer = (state = initialState, action) => {
-  switch(action.type){
+  switch (action.type) {
     case SET_ROCKETS:
-      return {...state, rockets: action.payload};
+      return { ...state, rockets: action.payload };
     case SET_RESERVED:
-      return {...state, rockets: state.rockets.map((rocket) => (
-            rocket.id === action.payload ? { ...rocket, reserved: true } : rocket
-          ),
-      ),
-    };
+      return {
+        ...state,
+        rockets: state.rockets.map((rocket) => (
+          rocket.id === action.payload ? { ...rocket, reserved: true } : rocket
+        )),
+      };
     case SET_CANCELATION:
-      return {...state, rockets: state.rockets.map((rocket) => (
-            rocket.id === action.payload ? { ...rocket, reserved: false } : rocket
-          ),
-        ),
-      };  
-      default:
-        return state;
+      return {
+        ...state,
+        rockets: state.rockets.map((rocket) => (
+          rocket.id === action.payload ? { ...rocket, reserved: false } : rocket
+        )),
+      };
+    default:
+      return state;
   }
 };
 
@@ -46,9 +49,9 @@ export const setCancelation = (id) => ({
 
 export const fetchRockets = (dispatch) => {
   axios.get(URL)
-  .then((response) => {
-    dispatch(setRockets(response.data));
-  })
+    .then((response) => {
+      dispatch(setRockets(response.data));
+    });
 };
 
 export default rocketsReducer;

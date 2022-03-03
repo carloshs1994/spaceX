@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
@@ -5,7 +6,9 @@ import { setReserved, setCancelation } from '../redux/rocketsReducer';
 import { Badge } from 'react-bootstrap';
 
 const Rockets = (props) => {
-  const { id, flickr_images, rocket_name, description, reserved, } = props
+  const {
+    id, flickr_images, rocket_name, description, reserved,
+  } = props;
 
   const dispatch = useDispatch();
 
@@ -29,13 +32,12 @@ const Rockets = (props) => {
           type="button" 
           className={reserved === true ? 'btn btn-dark mx-5' : 'btn btn-primary mx-5'}
           onClick={reserved === true ? cancelReservation : newReservation}
-          >
-            {reserved === true ? 'Cancel Reservation' : 'Reserve Rocket'}
+        >
+          {reserved === true ? 'Cancel Reservation' : 'Reserve Rocket'}
         </button>
       </div>
-
     </div>
-  )
+  );
 };
 
 Rockets.propTypes = {
