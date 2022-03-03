@@ -9,11 +9,9 @@
 - React, Redux, React Bootstrap
 - Visual Studio Code.
 
-## Live Demos
+## Live Demo
 
-- [Live Demo Link github]()
-- [Live Demo Link heroku]()
-- [Live Demo Link netlify]()
+- [Live Demo Link github](https://carloshs1994.github.io/spaceX/)
 
 ## Getting Started
 

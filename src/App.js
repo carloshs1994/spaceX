@@ -5,19 +5,17 @@ import Missions from './components/Missions';
 import MyProfile from './components/MyProfile';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <BrowserRouter>
-        <NavBar />
-        <Routes>
-          <Route path="/" element={<RocketsContainer />} />
-          <Route path="/Missions" element={<Missions />} />
-          <Route path="/MyProfile" element={<MyProfile />} />
-        </Routes>
-      </BrowserRouter>
-    </div>
-  );
-}
+const App = () => (
+  <div className="App">
+    <BrowserRouter>
+      <NavBar />
+      <Routes>
+        <Route path="/" element={<RocketsContainer />} />
+        <Route path="/Missions" element={<Missions />} />
+        <Route path="/MyProfile" element={<MyProfile />} />
+      </Routes>
+    </BrowserRouter>
+  </div>
+);
 
 export default App;
