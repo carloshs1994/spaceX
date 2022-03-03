@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { setReserved, setCancelation } from '../redux/rocketsReducer';
+import { Badge } from 'react-bootstrap';
 
 const Rockets = (props) => {
   const { id, flickr_images, rocket_name, description, reserved, } = props
@@ -17,19 +18,16 @@ const Rockets = (props) => {
   };
 
   return (
-    <div key={id} className="d-flex flex-row my-3">
+    <div key={id} className="d-flex flex-row my-4 mx-4">
       <div>
         <img src={flickr_images} alt="flickr_images" className="rockets-images" />
       </div>
-      <div className="">
-        <h5 className="">{rocket_name}</h5>
-        <div className="d-flex flex-row">
-          <button className={reserved === true ? 'btn btn-primary btn-sm' : 'btn btn-hide'}>{ reserved === true ? 'Reserved' : ''}</button>
-          <p className="px-5">{description}</p>
-        </div>
+      <div className="d-flex flex-column align-items-start">
+        <h5 className="mx-5">{rocket_name}</h5>
+        <p className="text-start mx-5"><Badge bg={reserved === true ?  "info" : 'bg-hide'}>{ reserved === true ? 'Reserved' : ''}</Badge>{description}</p>
         <button 
           type="button" 
-          className={reserved === true ? 'btn btn-dark' : 'btn btn-primary'}
+          className={reserved === true ? 'btn btn-dark mx-5' : 'btn btn-primary mx-5'}
           onClick={reserved === true ? cancelReservation : newReservation}
           >
             {reserved === true ? 'Cancel Reservation' : 'Reserve Rocket'}
