@@ -27,4 +27,5 @@ Rockets.propTypes = {
   flickr_images: PropTypes.string.isRequired,
 };
 
+
 export default Rockets;
