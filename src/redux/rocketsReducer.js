@@ -1,4 +1,5 @@
 import axios from 'axios';
+
 const SET_ROCKETS = 'spaceX/rocketsReducer/SET_ROCKETS';
 const SET_RESERVED = 'spaceX/rocketsReducer/SET_RESERVED';
 const SET_CANCELATION = 'spacex/rocketsReducer/SET_CANCELATION';
@@ -9,7 +10,7 @@ const initialState = {
 };
 
 const rocketsReducer = (state = initialState, action) => {
-  switch(action.type){
+  switch (action.type) {
     case SET_ROCKETS:
       return {...state, rockets: action.payload};
     case SET_RESERVED:
