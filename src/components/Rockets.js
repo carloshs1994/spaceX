@@ -27,7 +27,7 @@ const Rockets = (props) => {
       <div className="">
         <h5 className="">{rocket_name}</h5>
         <div className="d-flex flex-row">
-          <button className={reserved === true ? 'btn btn-primary btn-sm' : 'btn btn-hide'}>{ reserved === true ? 'Reserved' : ''}</button>
+          <button type="button" className={reserved === true ? 'btn btn-primary btn-sm' : 'btn btn-hide'}>{ reserved === true ? 'Reserved' : ''}</button>
           <p className="px-5">{description}</p>
         </div>
         <button
