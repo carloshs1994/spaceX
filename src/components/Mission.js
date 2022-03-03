@@ -13,13 +13,13 @@ const PrintMissions = ({ list }) => list.map((mission) => {
   const Buttons = () => {
     if (mission.reserved) {
       return (
-        <td className="text-center">
+        <td id="container" className="text-center">
           <Button onClick={changeStatus} id={mission.id} variant="outline-danger">Leave Mission</Button>
         </td>
       );
     }
     return (
-      <td className="text-center">
+      <td id="container" className="text-center">
         <Button onClick={changeStatus} id={mission.id} variant="outline-secondary">Join Mission</Button>
       </td>
     );
@@ -29,7 +29,7 @@ const PrintMissions = ({ list }) => list.map((mission) => {
     <tr key={mission.id}>
       <th>{mission.name}</th>
       <td>{mission.description}</td>
-      <td className="text-center">
+      <td id="container1" className="text-center">
         {mission.reserved && <Badge bg="info">Active Member</Badge>}
         {mission.reserved === false && <Badge bg="secondary">NOT A MEMBER</Badge>}
       </td>
