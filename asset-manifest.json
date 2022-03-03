@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/spaceX/static/css/main.7cd85660.css",
+    "main.js": "/spaceX/static/js/main.6f8719df.js",
+    "static/media/planet.png": "/spaceX/static/media/planet.3f6fb2742f28651730c0.png",
+    "index.html": "/spaceX/index.html",
+    "main.7cd85660.css.map": "/spaceX/static/css/main.7cd85660.css.map",
+    "main.6f8719df.js.map": "/spaceX/static/js/main.6f8719df.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7cd85660.css",
+    "static/js/main.6f8719df.js"
+  ]
+}
