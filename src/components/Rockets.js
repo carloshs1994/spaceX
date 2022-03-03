@@ -2,7 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Rockets = (props) => {
-  const { id, flickr_images, rocket_name, description } = props
+  const {
+    id, flickr_images, rocket_name, description,
+  } = props;
 
   return (
     <div key={id} className="d-flex flex-row justify-content-center">
@@ -14,7 +16,7 @@ const Rockets = (props) => {
         <p className="px-5">{description}</p>
       </div>
     </div>
-  )
+  );
 };
 
 Rockets.propTypes = {
