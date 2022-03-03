@@ -37,3 +37,8 @@
     transform: rotate(360deg);
   }
 }
+
+.rockets-images {
+  width: 246px;
+  height: 171px;
+}
