@@ -5,7 +5,9 @@ import { useDispatch } from 'react-redux';
 import { setReserved, setCancelation } from '../redux/rocketsReducer';
 
 const Rockets = (props) => {
-  const { id, flickr_images, rocket_name, description, reserved, } = props
+  const {
+    id, flickr_images, rocket_name, description, reserved,
+  } = props;
 
   const dispatch = useDispatch();
 
@@ -28,12 +30,12 @@ const Rockets = (props) => {
           <button className={reserved === true ? 'btn btn-primary btn-sm' : 'btn btn-hide'}>{ reserved === true ? 'Reserved' : ''}</button>
           <p className="px-5">{description}</p>
         </div>
-        <button 
-          type="button" 
+        <button
+          type="button"
           className={reserved === true ? 'btn btn-dark' : 'btn btn-primary'}
           onClick={reserved === true ? cancelReservation : newReservation}
-          >
-            {reserved === true ? 'Cancel Reservation' : 'Reserve Rocket'}
+        >
+          {reserved === true ? 'Cancel Reservation' : 'Reserve Rocket'}
         </button>
       </div>
 
