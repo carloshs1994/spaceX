@@ -7,6 +7,7 @@ import {
 } from 'react-bootstrap';
 import { useSelector } from 'react-redux';
 import PropTypes from 'prop-types';
+import RocketsProfile from './RocketsProfile';
 
 const MyProfile = () => {
   const missionsData = useSelector((state) => state.missionsReducer);
@@ -38,13 +39,7 @@ const MyProfile = () => {
         <Col className="d-flex flex-column align-items-left mt-4">
           <h1>My Rockets</h1>
           <Table bordered hover>
-            <tbody>
-              <tr>
-                <td>
-                  <p className="ms-2">1</p>
-                </td>
-              </tr>
-            </tbody>
+             <RocketsProfile />
           </Table>
         </Col>
       </Row>
