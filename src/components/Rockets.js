@@ -2,8 +2,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { setReserved, setCancelation } from '../redux/rocketsReducer';
 import { Badge } from 'react-bootstrap';
+import { setReserved, setCancelation } from '../redux/rocketsReducer';
 
 const Rockets = (props) => {
   const {
@@ -27,9 +27,12 @@ const Rockets = (props) => {
       </div>
       <div className="d-flex flex-column align-items-start">
         <h5 className="mx-5">{rocket_name}</h5>
-        <p className="text-start mx-5"><Badge bg={reserved === true ?  "info" : 'bg-hide'}>{ reserved === true ? 'Reserved' : ''}</Badge>{description}</p>
-        <button 
-          type="button" 
+        <p className="text-start mx-5">
+          <Badge bg={reserved === true ? 'info' : 'bg-hide'}>{ reserved === true ? 'Reserved' : ''}</Badge>
+          {description}
+        </p>
+        <button
+          type="button"
           className={reserved === true ? 'btn btn-dark mx-5' : 'btn btn-primary mx-5'}
           onClick={reserved === true ? cancelReservation : newReservation}
         >

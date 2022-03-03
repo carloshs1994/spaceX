@@ -39,7 +39,7 @@ const MyProfile = () => {
         <Col className="d-flex flex-column align-items-left mt-4">
           <h1>My Rockets</h1>
           <Table bordered hover>
-             <RocketsProfile />
+            <RocketsProfile />
           </Table>
         </Col>
       </Row>
