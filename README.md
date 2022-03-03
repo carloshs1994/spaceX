@@ -97,9 +97,9 @@ The deployment can be found in the Github Pages of this repository or through th
 
 👤 **German Cobian**
 
-- GitHub: [German Cobian]()
-- Twitter: [German Cobian]()
-- LinkedIn: [German Cobian]()
+- GitHub: [@German-Cobian](https://github.com/German-Cobian)
+- Twitter: [@GermanCobian1](https://twitter.com/GermanCobian1)
+- LinkedIn: [@german-cobian](https://www.linkedin.com/in/german-cobian/)
 
 👤 **Carlos Herver Solano**
 
