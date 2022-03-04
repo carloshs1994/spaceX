@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches RocketsProfile component snapshot 1`] = `
+<tr>
+  <th>
+    Eutelsat
+  </th>
+  <td>
+    Eutelsat S.A. is a European satellite operator. Providing coverage over the entire European continent, the Middle East, Africa, Asia and the Americas, it is the world's third largest satellite operator in terms of revenues.
+  </td>
+  <td
+    className="text-center"
+    id="container1"
+  >
+    <span
+      className="badge bg-secondary"
+    >
+      NOT A MEMBER
+    </span>
+  </td>
+  <td
+    className="text-center"
+    id="container"
+  >
+    <button
+      className="btn btn-outline-secondary"
+      disabled={false}
+      id="F7709F2"
+      onClick={[Function]}
+      type="button"
+    >
+      Join Mission
+    </button>
+  </td>
+</tr>
+`;

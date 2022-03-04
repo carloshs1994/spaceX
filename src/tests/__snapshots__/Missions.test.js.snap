@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches RocketsProfile component snapshot 1`] = `
+<div
+  className="col-11 mx-auto mt-4"
+>
+  <table
+    className="table table-sm table-striped table-bordered table-hover"
+    style={
+      Object {
+        "textAlign": "left",
+      }
+    }
+  >
+    <thead>
+      <tr>
+        <th
+          className="col-1"
+        >
+          Missions
+        </th>
+        <th
+          className="col-8"
+        >
+          Description
+        </th>
+        <th
+          className="col-1"
+        >
+          Status
+        </th>
+        <th>
+           
+        </th>
+      </tr>
+    </thead>
+    <tbody />
+  </table>
+</div>
+`;
