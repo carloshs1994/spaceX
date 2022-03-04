@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`rocket component functionality matches Rockets component snapshot 1`] = `
+<div
+  className="d-flex flex-row my-4 mx-4"
+>
+  <div>
+    <img
+      alt="flickr_images"
+      className="rockets-images"
+    />
+  </div>
+  <div
+    className="d-flex flex-column align-items-start"
+  >
+    <h5
+      className="mx-5"
+    />
+    <p
+      className="text-start mx-5"
+    >
+      <span
+        className="badge bg-bg-hide"
+      >
+        
+      </span>
+    </p>
+    <button
+      className="btn btn-primary mx-5"
+      onClick={[Function]}
+      type="button"
+    >
+      Reserve Rocket
+    </button>
+  </div>
+</div>
+`;
