@@ -15,7 +15,12 @@ const Rockets = (props) => {
       <div className="d-flex flex-column align-items-start">
         <h5 className="mx-5">{rocket_name}</h5>
         <p className="text-start mx-5">
-          <button className={reserved === true ? 'info' : 'bg-hide'}>{ reserved === true ? 'Reserved' : ''}</button>
+          <button 
+            type="button"
+            className={reserved === true ? 'info' : 'bg-hide'}
+          >
+            { reserved === true ? 'Reserved' : ''}
+          </button>
           {description}
         </p>
         <button
