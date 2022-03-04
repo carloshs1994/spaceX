@@ -35,7 +35,7 @@ describe('rocket component functionality', () => {
         id="TestId"
         rocket_name="rocket two"
         description="description one"
-        reserved={true}
+        reserved
       />,
     );
     expect(component.container).toHaveTextContent('Cancel Reservation');

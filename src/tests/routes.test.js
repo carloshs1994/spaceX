@@ -1,7 +1,5 @@
 import { render, screen } from '@testing-library/react';
 import { MemoryRouter } from 'react-router';
-import App from '../App';
-import NavBar from '../components/NavBar';
 import Missions from '../components/Missions';
 import RocketsContainer from '../components/RocketsContainer';
 import MyProfile from '../components/MyProfile';
@@ -42,7 +40,6 @@ describe('Correct render of the routes', () => {
         <RocketsContainer />
       </MemoryRouter>,
     );
-    
     expect(screen.getByText('HomePageMock')).toBeInTheDocument();
   });
 });
