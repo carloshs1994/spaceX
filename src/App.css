@@ -32,7 +32,18 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.rockets-images {
+  width: 246px;
+  height: 171px;
+}
+
+.planet-logo {
+  width: 90px;
+  height: 70px;
 }
