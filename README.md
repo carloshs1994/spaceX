@@ -103,7 +103,7 @@ The deployment can be found in the Github Pages of this repository or through th
 
 - GitHub: [@carloshs1994](https://github.com/carloshs1994)
 - Twitter: [@hscarlos_](https://twitter.com/hscarlos_)
-- LinkedIn: [Carlos](https://www.linkedin.com/in/carloshs94/)
+- LinkedIn: [Carlos HS](https://www.linkedin.com/in/carloshs94/)
 
 ## Show your support
 
