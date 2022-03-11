@@ -10,7 +10,7 @@ const NavBar = () => (
     </div>
     <div className="my-auto">
       <NavLink
-        to="/"
+        to="/spaceX"
         style={({ isActive }) => (isActive
           ? { textDecoration: 'underline' }
           : { textDecoration: 'none' })}
